@@ -1,0 +1,3 @@
+config:
+    teleportCost: 3.0
+    Pluginprefix: "[Simple Hub]"

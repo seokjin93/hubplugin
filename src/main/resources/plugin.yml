@@ -1,0 +1,32 @@
+name: HubPlugin
+version: '${project.version}'
+main: seokjin91.hubplugin.main
+api-version: 1.8
+authors: [ Seokjin91 ]
+description: A simple hub plugin
+softdepend: [Multiverse-Core, Vault]
+commands:
+  simplehub:
+    description: Comando principal
+    permission: simplehub.simplehub
+    usage: /simplehub
+  setspawn:
+    description: Comando para poner la ubicacion del spawn
+    aliases:
+      - sethub
+    permission: simplehub.sethub
+    usage: /setspawn
+  spawn:
+    description: Comando para poner la ubicacion del spawn
+    permission: simplehub.spawn
+    aliases:
+      - hub
+    usage: /spawn
+permissions:
+  simplehub.sethub:
+    description: Te permite ejecutar el comando para poner el spawn!
+    default: op
+  simplehub.spawn:
+      description: Te permite ejecutar el comando para ir al spawn!
+      default: true
+
